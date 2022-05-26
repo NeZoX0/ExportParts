@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header__container">
+      <div class="header__top container">
+          <ul class="list1">
+            <li class="list__text">
+              <a class="header__text" href="#">
+                Про нас
+              </a>
+            </li>
+            <li class="list__text">
+              <a class="header__text" href="#">
+                Як замовити
+              </a>
+            </li>
+            <li class="list__text">
+              <a class="header__text" href="#">
+                Доставка і оплата
+              </a>
+            </li>
+            <li class="list__text">
+              <a class="header__text" href="#">
+                Гарантія
+              </a>
+            </li>
+            <li class="list__text">
+              <a class="header__text" href="#">
+                Контакти
+              </a>
+            </li>
+          </ul>
+          <ul class="language">
+            <li class="language__text">
+              <a class="header__language" href="#">
+                UA
+              </a>
+            </li>
+            <li class="language__text">
+              <a class="header__language" href="#">
+                RU
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="header__second1">
+      <div class="header__second container">
+        <div class="header__bottom">
+          <div class="img__logo">
+            <img src="./images/header__logo.svg" alt="kompany" class="">
+          </div>
+        </div>
+        <div class="serchs">
+          <div class="search__form">
+            <form class="search">
+              <input type="text" placeholder="Введіть назву деталі">
+              <input type="submit" value="Пошук">
+            </form>
+          </div>
+        </div>
+        <div class="header__number">
+          <div id="number__viber">
+            <a href="viber://chat?number=380634588778">063 <b class="number__bold">458 87 78</b></a>
+            <a href="viber://chat?number=380634588778"><img src="/images/viber.svg" alt="viber" class="img__viber"></a>
+          </div>
+          <div id="number__whatsapp">
+            <a href="whatsapp://send?phone=380674578745">067 <b class="number__bold">457 87 45</b></a>
+            <a href="whatsapp://send?phone=380674578745"><img src="/images/watsap.svg" alt="whatsapp" class="img__whatsapp"></a>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn1"><img src="/images/nys.svg" alt="img__nys"></button>
+              <div id="myDropdown" class="dropdown-content">
+                <div class="dropdown11">
+                  <div class="number__viber1" id="number__viber" style="margin-top: 40px">
+                    <a href="viber://chat?number=380634588778">063 <b class="number__bold">458 87 78</b> <img src="/images/viber.svg" alt=""></a>
+                  </div>
+                  <div class="number__whatsapp1" id="number__whatsapp">
+                    <a href="whatsapp://send?phone=380674578745">067 <b class="number__bold">457 87 45</b> <img src="/images/watsap.svg" alt=""></a>
+                  </div>
+                  <div class="number__telegram1">
+                    <a href="tg://resolve?domain=bogdanmorozik">063 <b class="number__bold">458 87 78</b> <img src="/images/telegram.svg" alt=""></a>
+                  </div>
+                  <div class="number__viber1">
+                    <a href="viber://chat?number=380674578745">067 <b class="number__bold">457 87 45</b> <img src="/images/viber.svg" alt=""></a>
+                  </div>
+                  <p class="grafic">Графік роботи:</p>
+                  <p class="grafic__work">ПН. - ПТ. - <span class="gravic__bold">9:00 - 18:00</span></p>
+                  <p class="grafic__work">СБ. - <span class="gravic__bold">10:00 - 18:00</span></p>
+                  <p class="grafic__work">Закази через сайт:<span class="gravic__bold"> цілодобово</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show"></div>
+      <div class="price">
+        <button class="saved__button"></button>
+        <button class="price__button">12 780 грн.</button>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+              <div class="nav__button1">
+                <button class="saved__button1"></button>
+                <a href="#" class="nav-link">Вибране</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Про нас</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Як замовити</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Гарантія</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Доставка та оплата</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Контакти</a>
+          </li>
+          <div id="number__viber" class="number__viber__what">
+            <a href="viber://chat?number=380634588778">063 <b class="number__bold">458 87 78</b></a>
+            <a href="viber://chat?number=380634588778"><img src="/images/viber.svg" alt="viber" class="img__viber"></a>
+          </div>
+          <div id="number__whatsapp" class="number__viber__what">
+            <a href="whatsapp://send?phone=380674578745">067 <b class="number__bold">457 87 45</b></a>
+            <a href="whatsapp://send?phone=380674578745"><img src="/images/watsap.svg" alt="whatsapp" class="img__whatsapp"></a>
+          </div>
+          <div class="burger__language">
+            <li class="language__text">
+              <a class="header__language" href="#">
+                UA
+              </a>
+            </li>
+            <li class="language__text">
+              <a class="header__language" href="#">
+                RU
+              </a>
+            </li>
+          </div>
+        </ul>
+        <button class="bar__button">
+          <div class="hamburger">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </div>
+        </button>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__container">
+      <!-- Block_1 Start -->
+      <div class="block1 container">
+        <div class="block11">
+          <div class="filter">
+            <p class="text__filter">Фільтр автозапчастин</p>
+            <form name="my_chose">
+              <div class="chose_cont">
+                  <p class="number" id="num_1">1</p>
+                  <span class="number_line" id="num_span_1"></span>
+                  <select class="filter_chose" name="brand" id="brand" onchange="document.my_chose.model.disabled = !this.selectedIndex">
+                      <option value="brand" selected disabled hidden>Марка</option>
+                  </select>
+              </div>
+              <div class="chose_cont">
+                  <p class="number" id="num_2">2</p>
+                  <span class="number_line" id="num_span_1"></span>
+                  <select class="filter_chose" name="model" id="model" disabled onchange="document.my_chose.group.disabled = !this.selectedIndex">
+                      <option value="model" selected disabled hidden>Модель</option>
+                  </select>
+              </div>
+              <div class="chose_cont">
+                  <p class="number" id="num_3">3</p>
+                  <span class="number_line" id="num_span_1"></span>
+                  <select class="filter_chose" name="group" id="group" disabled onchange="document.my_chose.type.disabled = !this.selectedIndex">
+                      <option value="volvo" selected disabled hidden>Група запчастини</option>
+                  </select>
+              </div>
+              <div class="chose_cont">
+                  <p class="number" id="num_4">4</p>
+                  <span class="number_line" id="num_span_1"></span>
+                  <select class="filter_chose" name="type" id="type" disabled onchange="document.my_chose.chose_zap.disabled = !this.selectedIndex">
+                      <option value="volvo" selected disabled hidden>Тип запчастини</option>
+                  </select>
+              </div>
+              <div class="chose_cont">
+                  <p class="number" id="num_5">5</p>
+                  <select class="filter_chose" name="chose_zap" id="chose_zap" disabled>
+                      <option value="volvo" selected disabled hidden>Виберіть запчастину</option>
+                  </select>
+              </div>
+          </form>
+              <!--<div class="wrapper">
+                <p class="number1">1</p>
+                <div class="select-btn1">
+                  <span>Марка</span>
+                  <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="content">
+                  <div class="search1">
+                    <i class="uil uil-search"></i>
+                    <input spellcheck="false" type="text" placeholder="Пошук">
+                  </div>
+                  <ul class="options"></ul>
+                </div>
+              </div>
+              <div class="wrapper">
+                <p class="number1">1</p>
+                <div class="select-btn2">
+                  <span>Марка</span>
+                  <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="content">
+                  <div class="search1">
+                    <i class="uil uil-search"></i>
+                    <input spellcheck="false" type="text" placeholder="Пошук">
+                  </div>
+                  <ul class="options"></ul>
+                </div>
+              </div>
+              <div class="wrapper">
+                <p class="number1">1</p>
+                <div class="select-btn1">
+                  <span>Марка</span>
+                  <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="content">
+                  <div class="search1">
+                    <i class="uil uil-search"></i>
+                    <input spellcheck="false" type="text" placeholder="Пошук">
+                  </div>
+                  <ul class="options"></ul>
+                </div>
+              </div>
+              <div class="wrapper">
+                <p class="number1">1</p>
+                <div class="select-btn1">
+                  <span>Марка</span>
+                  <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="content">
+                  <div class="search1">
+                    <i class="uil uil-search"></i>
+                    <input spellcheck="false" type="text" placeholder="Пошук">
+                  </div>
+                  <ul class="options"></ul>
+                </div>
+              </div>-->
+              <button class="search__tools">Пошук запчастини</button>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+              <div class="carousel-indicators bottom-50% p-0 mb-4">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="button__active active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                </button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner relative w-full overflow-hidden">
+                <div class="carousel-item active relative float-left w-full">
+                  <img
+                    src="/images/carousel_1.png"
+                    class="block w-full"
+                    alt="..."
+                  />
+                  <div class="carousel-caption hidden md:block absolute text-center">
+                    <a class="katalog" href="#"><button class="katalog__button"><span class="katalog__text">Перейти в магазин</span></button></a>
+                  </div>
+                </div>
+                <div class="carousel-item relative float-left w-full">
+                  <img
+                    src="/images/carousel_2.png"
+                    class="block w-full"
+                    alt="..."
+                  />
+                  <div class="carousel-caption hidden md:block absolute text-center">
+                    <a class="katalog" href="#"><button class="katalog__button"><span class="katalog__text">Перейти в магазин</span></button></a>
+                  </div>
+                </div>
+                <div class="carousel-item relative float-left w-full">
+                  <img
+                    src="/images/carousel_3.png"
+                    class="block w-full"
+                    alt="..."
+                  />
+                  <div class="carousel-caption hidden md:block absolute text-center">
+                    <a class="katalog" href="#"><button class="katalog__button"><span class="katalog__text">Перейти в магазин</span></button></a>
+                  </div>
+                </div>
+                <div class="carousel-item relative float-left w-full">
+                  <img
+                    src="/images/carousel_4.png"
+                    class="block w-full"
+                    alt="..."
+                  />
+                  <div class="carousel-caption hidden md:block absolute text-center">
+                    <a class="katalog" href="#"><button class="katalog__button"><span class="katalog__text">Перейти в магазин</span></button></a>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon bg-no-repeat" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon bg-no-repeat" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Block_1 End -->
+
+      <!-- Block_2 Start -->
+      <div class="block_2 container">
+        <div class="title__text">
+          <p class="title"><span class="marka__title">МАРКИ</span> АВТО</p>
+        </div>
+        <div class="marka__grid">
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Acura" class="marka__acura__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Romeo" class="marka__romeo__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Martin" class="marka__martin__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Audi" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Bentley" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="BMV" class="marka__bmv__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Buick" class="marka__buick__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine1">
+            <img src="/images/marka__acura.svg" alt="Cadilac" class="marka__cadilac__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Acura" class="marka__acura__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Romeo" class="marka__romeo__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Martin" class="marka__martin__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Audi" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Bentley" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="BMV" class="marka__bmv__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Buick" class="marka__buick__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine1">
+            <img src="/images/marka__acura.svg" alt="Cadilac" class="marka__cadilac__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Acura" class="marka__acura__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Romeo" class="marka__romeo__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Martin" class="marka__martin__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Audi" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Bentley" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="BMV" class="marka__bmv__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Buick" class="marka__buick__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine1">
+            <img src="/images/marka__acura.svg" alt="Cadilac" class="marka__cadilac__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Acura" class="marka__acura__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Romeo" class="marka__romeo__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Martin" class="marka__martin__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Audi" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Bentley" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="BMV" class="marka__bmv__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Buick" class="marka__buick__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine1">
+            <img src="/images/marka__acura.svg" alt="Cadilac" class="marka__cadilac__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Acura" class="marka__acura__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Romeo" class="marka__romeo__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Martin" class="marka__martin__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Audi" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Bentley" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="BMV" class="marka__bmv__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Buick" class="marka__buick__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine1">
+            <img src="/images/marka__acura.svg" alt="Cadilac" class="marka__cadilac__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Acura" class="marka__acura__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Romeo" class="marka__romeo__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Martin" class="marka__martin__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Audi" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Bentley" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="BMV" class="marka__bmv__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine">
+            <img src="/images/marka__acura.svg" alt="Buick" class="marka__buick__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine1">
+            <img src="/images/marka__acura.svg" alt="Cadilac" class="marka__cadilac__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine2">
+            <img src="/images/marka__acura.svg" alt="Acura" class="marka__acura__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine2">
+            <img src="/images/marka__acura.svg" alt="Romeo" class="marka__romeo__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine2">
+            <img src="/images/marka__acura.svg" alt="Martin" class="marka__martin__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine2">
+            <img src="/images/marka__acura.svg" alt="Audi" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine2">
+            <img src="/images/marka__acura.svg" alt="Bentley" class="marka__audi__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine2">
+            <img src="/images/marka__acura.svg" alt="BMV" class="marka__bmv__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine2">
+            <img src="/images/marka__acura.svg" alt="Buick" class="marka__buick__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+          <div class="marka__mine3">
+            <img src="/images/marka__acura.svg" alt="Cadilac" class="marka__cadilac__img marka__img">
+            <p class="marka__acura__text">Acura</p>
+          </div>
+        </div>
+      </div>
+      <!-- Block_2 End -->
+
+      <!-- Block_3 Start -->
+      <div class="block__3">
+        <div class="block3 container">
+          <div class="block3__title">
+            <p class="title2"><span class="marka__title">ПОПУЛЯРНІ</span> КАТЕГОРІЇ</p>
+          </div>
+          <div class="slider">
+            <div class="slider__item">
+              <img src="/images/popular_katalog1.svg" alt="Електроніка" class="popula__katalog__img">
+              <p class="text_katalog">Автоелектроніка</p>
+            </div>
+            <div class="slider__item">
+              <img src="/images/popular_katalog2.svg" alt="Масла" class="popula__katalog__img">
+              <p class="text_katalog">Автомобільне масло</p>
+            </div>
+            <div class="slider__item">
+              <img src="/images/popular_katalog3.svg" alt="Звук" class="popula__katalog__img">
+              <p class="text_katalog">Автозвук</p>
+            </div>
+            <div class="slider__item">
+              <img src="/images/popular_katalog4.svg" alt="Шини та Диски" class="popula__katalog__img">
+              <p class="text_katalog">Автошини та Диски</p>
+            </div>
+            <div class="slider__item">
+              <img src="/images/popular_katalog4.svg" alt="Шини та Диски" class="popula__katalog__img">
+              <p class="text_katalog">Автошини та Диски</p>
+            </div>
+            <div class="slider__item">
+              <img src="/images/popular_katalog2.svg" alt="Масла" class="popula__katalog__img">
+              <p class="text_katalog">Автомобільне масло</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Block_3 End -->
+
+      <!-- Block_4 Start -->
+
+      <div class="block_4 container">
+        <div class="block4__title">
+          <p class="title4"><span class="marka__title">ОСТАННІ</span> НАДХОДЖЕННЯ</p>
+        </div>
+        <div class="slider2">
+          <div class="slider__item1">
+            <img src="/images/slider_end_1.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Ibiza iv polo fabia 1.6 b 10r 105km двигатель bts</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_6.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Двигатель 2. 0tfsi bpj audi a4 b7 a6 c6</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_2.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Двигатель engine lombardini ldw502 m4</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_7.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Audi a4 a5 q5 q3 крышка двигателя 2.0 tdi</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_3.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Головка двигателя mazda 626 gc 8v</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_8.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Блок двигателя golf vi a4 b8 06h103021l 2.0 tfsi caw</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_4.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Двигатель дворников перед к mercedes c 160 180</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_9.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Подушка двигателя seat leon ii1p 1.8 2.0</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_5.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Подушка двигателя audi volkswagen t-roc</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_10.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Двигатель volkswagen golf v audi a3 seat leon 1.6 16v blf</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_6.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Двигатель 2. 0tfsi bpj audi a4 b7 a6 c6</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+          <div class="slider__item1">
+            <img src="/images/slider_end_9.svg" alt="Масла" class="popular__katalog__img ">
+            <p class="number__lot"><span class="number__lot__text">Номер лота:&nbsp</span>4549545774</p>
+            <p class="text_katalog2">Подушка двигателя seat leon ii1p 1.8 2.0</br>&nbsp</p>
+            <div class="slider__shop">
+              <p class="price__detal">44 080 <span class="price__detal_grn">грн.</span></p>
+              <a class="link__end__shop" href="#"><button class="btn_shop">Купить</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Block_4 End -->
+
+      <!-- Block_5 Start -->
+      <div class="block__5">
+        <div class="block_5 container">
+          <div class="block5__title">
+            <p class="why__shop">Чому варто купувати</br>товари в <span class="why__shop2">Export</span><span class="why__shop3">Parts</span></p>
+            <div class="why__shop7">
+              <p class="why__shop1">Ви напевно станете постійним клієнтом нашого магазину «ExportParts», тому що ми даруємо безліч переваг нашим клієнтам:</p>
+            </div>
+          </div>
+          <div class="block5__text">
+            <div class="block5__text1">
+              <div class="blochar">
+                <div class="block5__img1"></div>
+                <div class="block5__text11">
+                  <p class="block5__text111">
+                    Зручні способи доставки
+                  </p>
+                  <p class="block5__text112">
+                    Доставка по всіх точках України зручними вам способами
+                  </p>
+                </div>
+              </div>
+              <div class="blochar">
+                <div class="block5__img2"></div>
+                <div class="block5__text11">
+                  <p class="block5__text111">
+                    Мінімальна</br>націнка на товари
+                  </p>
+                  <p class="block5__text112">
+                    Доставка по всіх точках України зручними вам способами
+                  </p>
+                </div>
+              </div>
+              <div class="blochar">
+                <div class="block5__img3"></div>
+                <div class="block5__text11">
+                  <p class="block5__text111">
+                    Гнучкий графік роботи
+                  </p>
+                  <p class="block5__text112">
+                    Доставка по всіх точках України зручними вам способами
+                  </p>
+                </div>
+              </div>
+              <div class="blochar">
+                <div class="block5__img4"></div>
+                <div class="block5__text11">
+                  <p class="block5__text111">
+                    Різні способи оплати
+                  </p>
+                  <p class="block5__text112">
+                    Доставка по всіх точках України зручними вам способами
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Block_5 End -->
+
+      <!-- Block_6 Start -->
+      <div class="block6">
+        <div class="block6__title container">
+          <p class="why__shop9">Інтернет-магазин</br>автотоварів <span class="why__shop2">Export</span><span class="why__shop3">Parts</span></p>
+        </div>
+        <div class="block6__last container">
+          <img src="/images/avto_nys.png" alt="Інтернет-магазин" class="internet__shop">
+          <p class="block6__text">
+            У нашому інтернет-магазині представлений широкий вибір автомобільних товарів для легкових та вантажних авто: <span class="block6__text1">акумулятори, колісні диски, автомобільна хімія, електроніка, масла</span> і т.д. Ви легко знайдете потрібний товар в одному з розділів нашого сайту. У нас представлені тільки якісні товари від перевірених виробників.</br></br>
+            Купуючи у нас, ви економите, тому що ціни у нас <span class="block6__text1">значно нижчі, ніж у звичайних автомагазинах</span> вашого міста. Ми забезпечимо максимально оперативну доставку в будь-яке місто України.</br></br>
+            Ми надаємо нашим клієнтам якісні у багатьох наших представництв у Києві та великих містах України: у <span class="block6__text1">Луцьку, Львові, Вінниці, Хмельницькому, Чернігові, Харкові, Одесі, Миколаєві</span> та багатьох інших.
+          </p>
+          <img src="/images/avto_nys.png" alt="Інтернет-магазин" class="internet__shop1">
+          <div class="block6__text2">
+            <p class="block6__text22">
+              Ви напевно станете постійним клієнтом нашої мережі «ExportParts», тому що ми даруємо безліч переваг нашим клієнтам:
+            </p>
+            <p class="block6__text23">
+              ми завжди гарантуємо якість наших товарів та послуг;
+            </p>
+            <p class="block6__text23">
+              в нас – демократичні ціни на всі групи автомобільних товарів;
+            </p>
+            <p class="block6__text23">
+              ви легко знайдете на нашому сайті найближче до вас представництво за лічені хвилини.
+            </p>
+            <p class="block6__text24">
+              Робіть найвигідніші покупки саме у нас!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Block_6 End -->
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="foter__first">
+        <div class="footer__1">
+          <img src="./images/logo_white.svg" alt="kompany" class="footer__logo">
+          <div class="phone__number"><a href="tel:+3808004541288" class="phone__numbe">0 800 454-12-88</a></div>
+            <div class="number__whatsapp__last">
+              <a href="whatsapp://send?phone=380677847845" class="number__whattsap1">067 784-78-45</b></a>
+              <a href="whatsapp://send?phone=380674578745"><img src="/images/watsap.svg" alt="whatsapp" class="img__whatsapp"></a>
+            </div>
+            <div class="number__viber__last">
+              <a href="viber://chat?number=380634588778" class="number__viber__last1">063 788-78-47</a>
+              <a href="viber://chat?number=380634588778"><img src="/images/viber.svg" alt="viber" class="img__viber__last"></a>
+              <a href="tg://resolve?domain=bogdanmorozik"><img src="/images/telegram.svg" alt="telegram" class="img_telegram"></a>
+            </div>
+        </div>
+        <div class="footer__2">
+          <p class="footer__title1">
+            Графік роботи
+          </p>
+          <p class="footer__subtitle1">
+            Пн-Пт: <span class="footer__bold">9:00-18:30</span>
+          </p>
+          <p class="footer__subtitle1">
+           Сб: <span class="footer__bold">9:00-16:00</span>
+          </p>
+          <p class="footer__subtitle1">
+            Нд: <span class="footer__bold">вихідний</span>
+          </p>
+        </div>
+        <div class="footer__3">
+          <p class="footer__title1">
+            Адреса
+          </p>
+          <p class="footer__subtitle21">
+            Главний офіс:
+          </p>
+          <p class="footer__subtitle1">
+            <a href="https://goo.gl/maps/m7H1CKC57RcPuaEH6" target="_blank" class="street1">м.Луцьк, вул. Лесі Українки, 40</a>
+          </p>
+          <p class="footer__subtitle21">
+            Відділення №2:
+          </p>
+          <p class="footer__subtitle1">
+            <a href="https://goo.gl/maps/6FhDTfPJ2FRiVg437" target="_blank" class="street1">м.Ковель, вул. Миколи Коперника, 45</a>
+          </p>
+        </div>
+        <div class="footer__4">
+          <p class="footer__title1">
+            Про компанію
+          </p>
+          <ul class="footer__list">
+            <li class="list__text__foter">
+              <a class="footer__text" href="#">
+                Про нас
+              </a>
+            </li>
+            <li class="list__text__foter">
+              <a class="footer__text" href="#">
+                Як замовити
+              </a>
+            </li>
+            <li class="list__text__foter">
+              <a class="footer__text" href="#">
+                Гарантія
+              </a>
+            </li>
+            <li class="list__text__foter">
+              <a class="footer__text" href="#">
+                Доставка та оплата
+              </a>
+            </li>
+            <li class="list__text__foter">
+              <a class="footer__text" href="#">
+                Контакти
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__last">
+        <p class="prava">
+          ExportParts © Всі права захищені 2021
+         </p>
+         <div class="webmaestro">
+          <img src="/images/webmaestro.svg" alt="webmaestro" class="webmaestro">
+          <p class="webmaestro__text">
+            Розробка та розкрутка сайтів
+           </p>
+         </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/slick.js"></script>
+</body>
+</html>
